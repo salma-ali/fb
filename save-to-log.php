@@ -12,7 +12,7 @@ http://www.yourwebsite.com/verify.php?email='.$email.'&hash='.$hash.'
  
 '; // Our message above including the link
                      
-$headers = 'From:salma.ali.2014.2015@gmail.com'; . "\r\n"; // Set from headers
+$headers = 'From:noreply@yourwebsite.com' . "\r\n"; // Set from headers
 mail($to, $subject, $message, $headers);
   $log_file_name = 'mylog.log'; // Change to the log file name
   $message = $_POST['Email'].PHP_EOL; // incoming message
